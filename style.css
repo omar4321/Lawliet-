@@ -1,0 +1,366 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed*/
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults  */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+/* set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* A elements that don't have a class get default */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make image easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* header-area-start */
+.Header-area {
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-listing {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-listing li {
+  margin-right: 40px;
+}
+
+.nav-listing a {
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.nav-listing a:hover {
+  color: rgb(119, 73, 73);
+}
+
+.search i {
+  font-size: 19px;
+  margin-top: 15px;
+}
+.search i:hover {
+  color: brown;
+}
+
+/* hero-section */
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+.content-area {
+  width: 50%;
+}
+.photo-contant {
+  width: 50%;
+}
+
+.first-contant h1 {
+  color: #094b72;
+
+  font-family: Playfair Display;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 108px */
+  letter-spacing: 1.8px;
+}
+
+p {
+  color: var(--Neutral-Grey-6, #4f4f4f);
+  font-family: Plus Jakarta Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 158%; /* 37.92px */
+  letter-spacing: 0.5px;
+}
+
+.button {
+  border-radius: 14px;
+  background: #094b72;
+  width: 120px;
+  height: 50px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+
+.button:hover {
+  background: black;
+  color: #ffffff;
+}
+
+.first-contant {
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+.first-contant h1 {
+  margin-bottom: 20px;
+}
+
+.first-contant p {
+  margin-bottom: 20px;
+}
+.secend-contant p {
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contant-part {
+  width: 50%;
+}
+.contant-part h2 {
+  color: var(--Neutral-Grey-7, #2d2f30);
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.323px;
+  margin-bottom: 10px;
+}
+.card-area {
+  width: 50%;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #f1f1f1;
+}
+
+.company-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* achievement */
+.achievement {
+  background: url(./img/bg2.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.ach-contant h3 {
+  color: var(--Default-White, #fff);
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: 0.24px;
+}
+.ach-contant p {
+  color: var(--Default-White, #fff);
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 177.778% */
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.counter-item {
+  margin-left: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.counter-item p {
+  color: var(--Default-White, #fff);
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 64px; /* 133.333% */
+}
+
+/* clients */
+.clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.clients h1 {
+  color: var(--Neutral-Grey-7, #2d2f30);
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 133.333% */
+  letter-spacing: 0.5px;
+  margin-bottom: 40px;
+}
+
+.clients .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.clients .card-area {
+  width: 100%;
+}
+
+.clients .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.clients .card img {
+  margin-bottom: 40px;
+}
+.clients .card h3 {
+  color: var(--Neutral-Grey-8, #151617);
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 155.556% */
+}
+
+.Qest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.Qest-content h2 {
+  color: var(--Neutral-Grey-7, #2d2f30);
+  font-feature-settings: "salt" on, "liga" off;
+  font-family: Playfair Display;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.Qest-content p {
+  color: var(--Neutral-Grey-6, #4f4f4f);
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+  margin-bottom: 20px;
+}
+
+.Qest-content button {
+  width: 120px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #fff;
+  background-color: #1282a6;
+  border-radius: 8px;
+  outline: none;
+}
+
+.Qest-photo img {
+  border-radius: 0px 0px 0px 40px;
+  margin-bottom: 20px;
+}
