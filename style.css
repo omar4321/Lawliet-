@@ -434,3 +434,148 @@ p {
   margin-left: 50px;
   margin-right: 50px;
 }
+
+/* Responsive  */
+@media (max-width: 57em) {
+  .nav-listing {
+    display: none;
+  }
+
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  .content-area {
+    width: 100%;
+  }
+  .photo-contant {
+    width: 100%;
+  }
+  .first-contant h1 {
+    color: #094b72;
+
+    font-family: Playfair Display;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 108px */
+    letter-spacing: 1.8px;
+  }
+
+  p {
+    color: var(--Neutral-Grey-6, #4f4f4f);
+    font-family: Plus Jakarta Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 158%; /* 37.92px */
+    letter-spacing: 0.5px;
+  }
+
+  .button {
+    border-radius: 14px;
+    background: #094b72;
+    width: 120px;
+    height: 50px;
+    outline: none;
+    overflow: hidden;
+    color: rgb(255, 255, 255);
+  }
+  .company-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .company-list img {
+    margin-bottom: 20px;
+  }
+  .secend-contant p {
+    text-align: center;
+  }
+  .company-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .contant-part {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contant-part h2 {
+    color: var(--Neutral-Grey-7, #2d2f30);
+    font-family: Playfair Display;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.323px;
+    margin-bottom: 10px;
+  }
+  .card-area {
+    width: 100%;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+  }
+
+  /* achievement */
+
+  .ach-contant h3 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .ach-contant p {
+    font-size: 10px;
+    font-weight: 800;
+  }
+
+  .counter-item {
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .counter-item p {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30px; /* 133.333% */
+  }
+
+  /* clients */
+
+  .clients .row {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+  }
+  .Qest {
+    flex-direction: column;
+  }
+  .Qest-content {
+    margin-bottom: 40px;
+  }
+  .Qest-photo {
+    margin-right: 10px;
+  }
+  .partone {
+    flex-direction: column;
+  }
+  .list-footer {
+    flex-direction: column;
+  }
+  .part-two {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+}
