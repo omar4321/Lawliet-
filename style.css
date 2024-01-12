@@ -159,7 +159,6 @@ p {
 
 .first-contant {
   margin-bottom: 50px;
-  margin-left: 30px;
 }
 .first-contant h1 {
   margin-bottom: 20px;
@@ -474,6 +473,9 @@ p {
   }
   .photo-contant {
     width: 100%;
+  }
+  .first-contant {
+    margin-left: 0;
   }
   .first-contant h1 {
     color: #094b72;
